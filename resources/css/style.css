@@ -2,16 +2,32 @@
 html,
 body {
   font-family: Seravek, sans-serif;
+  color: #454545;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
 /* header */
 header {
   height: 64px;
   padding: 24px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: lightgray;
 }
 
 .logo {
@@ -20,7 +36,7 @@ header {
   height: 32px;
 }
 
-.logo span {
+header span {
   color: gray;
 }
 
@@ -56,3 +72,76 @@ header li {
 }
 
 /* banner */
+.banner {
+  background-color: lightgray;
+}
+
+.banner .image {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner .slogan {
+  width: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.banner .btn {
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+  color: white;
+  background-color: #454545;
+  text-align: center;
+}
+
+@media only screen and (max-width:825px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .container.banner {
+    flex-direction: column;
+  }
+
+  .banner .image {
+    margin: 0;
+    width: 100%;
+  }
+
+  .banner .slogan {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
