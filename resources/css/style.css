@@ -1,0 +1,58 @@
+/* universal */
+html,
+body {
+  font-family: Seravek, sans-serif;
+}
+
+/* header */
+header {
+  height: 64px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.logo span {
+  color: gray;
+}
+
+header p {
+  display: inline-block;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.header.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 630px) {
+  .header.desktop {
+    display: none;
+  }
+  .header.mobile {
+    display: flex;
+  }
+
+  header .nav,
+  header ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+/* banner */
