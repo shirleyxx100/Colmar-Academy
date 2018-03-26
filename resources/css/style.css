@@ -363,6 +363,80 @@ header li {
     flex-direction: column;
     width: 100%;
   }
+}
 
+/* thesis */
+.container.thesis {
+  justify-content: center;
+  flex-direction: column;
+}
 
+.container.content {
+  padding: 0;
+  align-items: flex-start;
+}
+
+.thesis h2 {
+  margin-bottom: 32px;
+}
+
+.content .container.video {
+  width: 60%;
+  padding: 0 24px 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.video video {
+  width: 100%;
+}
+
+.video h5 {
+  margin: 24px 0 8px 0;
+}
+
+.content .container.other {
+  padding: 0;
+  width: 40%;
+  flex-direction: column;
+}
+
+.other .container {
+  padding: 0;
+}
+
+.content .other .container .image {
+  width: 35%;
+}
+
+.other .info {
+  width: 65%;
+}
+
+.other .container img {
+  width: 100%;
+}
+
+@media only screen and (max-width:825px) {
+  .thesis .container.other {
+    display: none;
+  }
+
+  .thesis .video h5,
+  p.description {
+    display: none;
+  }
+
+  .container.thesis {
+    padding: 32px 0 24px 0;
+  }
+
+  .content .container.video {
+    padding: 0;
+    width: 100%;
+  }
+
+  .thesis h2 {
+    margin-bottom: 16px;
+  }
 }
